@@ -10,12 +10,10 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Make port 8080 available to the world outside this container
-EXPOSE 8080
+EXPOSE 5000
 ENV CURRENT_ENVIRONMENT development
 # Define environment variable
 ENV NAME World
 
 # Run app.py when the container launches
 CMD ["python", "-m", "flask", "run", "--host=0.0.0.0"]
-#mm
