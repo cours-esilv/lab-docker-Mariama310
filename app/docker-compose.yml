@@ -2,3 +2,5 @@ version: '3'
 services:
   my-backend:
     image: mariama221/lab_docker:V1
+    ports:
+      - "5000:5000"
