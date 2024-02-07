@@ -4,3 +4,11 @@ services:
     image: mariama221/lab_docker:V1
     ports:
       - "5000:5000"
+    environment:
+      - CURRENT_ENVIRONMENT=development
+  my-frontend:
+    image: my-frontend-image
+    ports:
+      - "80:80"
+    environment:
+      - WS_BACK_URL=http://my-backend:5000
