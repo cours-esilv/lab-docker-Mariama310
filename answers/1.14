@@ -1,0 +1,2 @@
+docker stop $(docker ps -aq) #stop
+docker rmi -f $(docker images -q) #delete
