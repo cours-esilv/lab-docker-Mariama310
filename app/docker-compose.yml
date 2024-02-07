@@ -10,5 +10,5 @@ services:
     image: my-frontend-image
     ports:
       - "80:80"
-    environment:
+    environment: 
       - WS_BACK_URL=http://my-backend:5000
